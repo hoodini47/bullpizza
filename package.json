@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "BullPizza",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
@@ -35,6 +35,7 @@
     "react-loadable": "^5.5.0",
     "react-media": "^1.10.0",
     "react-modal": "^3.11.2",
+    "react-reveal": "^1.2.2",
     "react-useragent": "^1.1.2",
     "use-global-hook": "^0.1.12"
   },

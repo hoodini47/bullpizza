@@ -1,7 +1,7 @@
 import React from "react"
 import "../styles/desktop-header.scss"
 import { FaFacebook } from 'react-icons/fa';
-import BbgMiniSvgLogo from "../images/bbg-mini-logo.inline.svg"
+import BbgMiniSvgLogo from "../images/bullpizza-logo.inline.svg"
 import TripAdvisorLogo from "../images/tripadvisor.inline.svg"
 
 
@@ -67,10 +67,10 @@ const DesktopHeader = (props) => {
       </ul>
 
       <div id="social-media-icons">
-          <a href="https://pl.tripadvisor.com/Restaurant_Review-g274772-d10057087-Reviews-BULL_Burger_GRILL-Krakow_Lesser_Poland_Province_Southern_Poland.html">
+          <a href="https://pl.tripadvisor.com/Restaurant_Review-g274772-d1123070-Reviews-Bull_Pub-Krakow_Lesser_Poland_Province_Southern_Poland.html">
           <TripAdvisorLogo />
           </a>
-          <a href="https://www.facebook.com/bullburgerkrakow/">
+          <a href="https://www.facebook.com/Bull-Pizza-110322990705488">
             <FaFacebook />
           </a>
       </div>

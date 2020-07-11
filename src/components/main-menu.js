@@ -1,44 +1,34 @@
 import React from "react"
-
+import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import "../styles/menu.scss"
+import Zoom from 'react-reveal/Zoom';
+
 
 export const MainMenu = (props) => {
 
     const data = useStaticQuery(graphql`
-    query MyMenuItemQuery {
-      LangPL: allDatoCmsMenuItem(filter: {locale: {eq: "pl"}}) {
-        nodes {
-          burger {
-            ... on DatoCmsItemName {
-              name
-              secondName
-            }
-            ... on DatoCmsItemDescription {
-              description
-            }
-            ... on DatoCmsItemPrice {
-              burgerPrice
-            }
+    query MyMainMenuQuery {
+      LangPL: datoCmsMenuItem(locale: {eq: "pl"}) {
+        menuItem {
+          fluid {
+            src
+            srcSet
+            height
+            width
+            base64
           }
-          position
         }
       }
-      LangEN: allDatoCmsMenuItem(filter: {locale: {eq: "en"}}) {
-        nodes {
-          burger {
-            ... on DatoCmsItemName {
-              name
-              secondName
-            }
-            ... on DatoCmsItemDescription {
-              description
-            }
-            ... on DatoCmsItemPrice {
-              burgerPrice
-            }
+      LangEN: datoCmsMenuItem(locale: {eq: "en"}) {
+        menuItem {
+          fluid {
+            src
+            srcSet
+            height
+            width
+            base64
           }
-          position
         }
       }
     }
@@ -49,38 +39,17 @@ export const MainMenu = (props) => {
 
     props.langChosen ? allData = data.LangEN : allData = data.LangPL;
 
-    const currensy = ' zł'
 
  return (
   
   <div className={`main-menu`}>
 
-    <div className={`menu-items`}>
-    {
-    allData.nodes.sort(
-                        (a, b) => {
-                        const positionA = a.position;
-                        const positionB = b.position;
-                        let comparision = 0;
-                          if(positionA > positionB) {
-                            comparision = 1;
-                          } else if (positionA < positionB) {
-                            comparision = -1
-                          }
-                          return comparision
-                        }
-                      )
-                
-                      .map((block, index) => (
-                        <div key={index} className={`burger`}>
-                        <p>{block.burger[0].name}<br />
-                           {block.burger[0].secondName}
-                        </p>
-                        <p>{block.burger[1].description}</p>
-                        <p>{block.burger[2].burgerPrice}{currensy}</p>
-                        </div>
-                      ))
-    }
+    <div className={`menu-item-container`}>
+
+    <Zoom>
+    <Img fluid={allData.menuItem.fluid} />
+    </Zoom>
+
     </div>
 
   </div>

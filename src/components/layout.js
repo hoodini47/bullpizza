@@ -53,7 +53,6 @@ const Layout = () => {
 
       <Menu {...langProps}/>
 
-      <Location {...langProps} />
 
       <LeafletMap />
 

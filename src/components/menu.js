@@ -4,7 +4,7 @@ import "../styles/menu.scss"
 
 import MainMenu from "./main-menu"
 import ExtraMenuInfo from "./extra-menu-info"
-
+import Location from "./location"
 
 export const Menu = (props) => {
 
@@ -38,11 +38,10 @@ export const Menu = (props) => {
 
         <MainMenu {...props}/>
 
-        <ExtraMenuInfo {...props}/>
-
     </div>
 
 
+    <Location {...props} />
 
   </section>
 

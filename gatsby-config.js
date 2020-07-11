@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bull Burger Grill`,
-        short_name: `BBG`,
+        name: `Bull Pizza`,
+        short_name: `Bull Pizza`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a41833`,
         display: `standalone`,
-        icon: `src/images/bbg-mini-logo.inline.svg`, // This path is relative to the root of the site.
+        icon: `src/images/bullpizza-logo.inline.svg`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: `e5c87458dc3a65c0431e328e99529c`,
+        apiToken: `ac31a58b4dabdd8f9e386a126f0c39`,
         preview: false,
         disableLiveReload: false,
       },
