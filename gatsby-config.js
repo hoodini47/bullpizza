@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a41833`,
         display: `standalone`,
-        icon: `src/images/bullpizza-logo.inline.svg`, // This path is relative to the root of the site.
+        icon: `src/images/bullpizza-logo-large-png.png`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
