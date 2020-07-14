@@ -9,11 +9,15 @@ const Location = (props) => {
       locationHeader
       locationSlogan
       adress
+      callUs
+      phoneNumber
     }
     LangEN: datoCmsLocation(locale: {eq: "en"}) {
       locationHeader
       locationSlogan
       adress
+      callUs
+      phoneNumber
     }
     LangPLInfo: allDatoCmsSchedule(filter: {locale: {eq: "pl"}}) {
       nodes {
@@ -59,6 +63,10 @@ const Location = (props) => {
       <p className={`adress-info`}>
         {allData.adress}
       </p>
+
+      <h2>{allData.callUs}</h2>
+
+      <a href={`tel:${allData.phoneNumber}`}>{allData.phoneNumber}</a>
       </div>
     </section>
   )

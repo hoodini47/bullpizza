@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import "../styles/menu.scss"
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 
 export const MainMenu = (props) => {
@@ -46,9 +46,9 @@ export const MainMenu = (props) => {
 
     <div className={`menu-item-container`}>
 
-    <Zoom>
+    <Fade bottom delay={100} duration={600}>
     <Img fluid={allData.menuItem.fluid} />
-    </Zoom>
+    </Fade>
 
     </div>
 

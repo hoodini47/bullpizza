@@ -12,9 +12,9 @@ export const SectionWelcome = () => {
 
   const data =  useStaticQuery(graphql`
   query MyQuery {
-    file(relativePath: {eq: "BullPizzaMainPhoto.jpeg"}) {
+    file(relativePath: {eq: "MainPhoto.jpg"}) {
       childImageSharp {
-        fluid(quality: 100, maxHeight: 2000) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

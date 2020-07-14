@@ -4,7 +4,6 @@ import Header from "./header"
 import OrderButtonLazy from "./order-button-lazy"
 import SectionWelcome from "./section-welcome"
 import Menu from "./menu"
-import Location from "./location"
 import LeafletMap from "./leaflet-map"
 import Footer from "./footer"
 

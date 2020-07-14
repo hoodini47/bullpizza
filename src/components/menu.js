@@ -1,9 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "../styles/menu.scss"
-
 import MainMenu from "./main-menu"
-import ExtraMenuInfo from "./extra-menu-info"
 import Location from "./location"
 
 export const Menu = (props) => {
