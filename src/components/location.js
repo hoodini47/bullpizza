@@ -64,7 +64,7 @@ const Location = (props) => {
         {allData.adress}
       </p>
 
-      <h2>{allData.callUs}</h2>
+      <h2 id="secondh2">{allData.callUs}</h2>
 
       <a href={`tel:${allData.phoneNumber}`}>{allData.phoneNumber}</a>
       </div>
