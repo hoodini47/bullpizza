@@ -41,7 +41,7 @@ export default function OrderButtonModal(){
       </Helmet>
       
 
-      <button id={`goorderButton`} className={`goorder`} data-goorder-open data-goorder-modal="1" data-src="https://bullpub.goorder.pl">
+      <button id={`goorderButton`} className={`goorder`} data-goorder-open data-goorder-modal="1" data-src="https://bullpizza.goorder.pl">
 
         <img id={`widget-logo`} src="https://www.datocms-assets.com/26240/1588543443-goorder-icon.png"></img>
 
