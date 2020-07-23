@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../styles/section-welcome.scss"
@@ -33,7 +33,7 @@ export const SectionWelcome = () => {
       </div>
     </Zoom>
     
-    <div className={`scroll-icon`} onClick={() => scrollTo('#menu')}>
+    <div role="button" tabIndex={0} className={`scroll-icon`} onClick={() => scrollTo('#menu')}>
       <span className={`arrow-container`}><ArrowLogo /></span>
     </div>
   </section>

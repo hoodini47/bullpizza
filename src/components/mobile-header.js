@@ -5,7 +5,6 @@ import { FaFacebook } from 'react-icons/fa';
 import HamburgerButton from "./hamburger-button"
 // import TripAdvisorLogo from "../images/tripadvisor.inline.svg"
 import { navigate } from '@reach/router';
-import OrderButtonModal from "./order-button-modal"
 
 
 const MobileHeader = (props) => {
@@ -20,7 +19,7 @@ const MobileHeader = (props) => {
 
     <ul id="nav-items-list">
           <li>
-          <a onClick={() => {
+          <a role="button" tabIndex={0} onClick={() => {
                             document.getElementById('goorderButton').click();
                             props.setNavState(false)
                             }
@@ -30,7 +29,7 @@ const MobileHeader = (props) => {
                             {props.langChosen ? props.data.LangEN.order : props.data.LangPL.order}</a>
         </li>
         <li>
-          <a onClick={() => {
+          <a role="button" tabIndex={0} onClick={() => {
                             props.scrollTo('#welcome');
                             props.setNavState(false)
                             }
@@ -40,7 +39,7 @@ const MobileHeader = (props) => {
                             {props.langChosen ? props.data.LangEN.home : props.data.LangPL.home}</a>
         </li>
         <li>
-          <a onClick={() => {
+          <a role="button" tabIndex={0} onClick={() => {
                             props.scrollTo('#menu');
                             props.setNavState(false)
                             }
@@ -50,7 +49,7 @@ const MobileHeader = (props) => {
                             {props.langChosen ? props.data.LangEN.menu : props.data.LangPL.menu}</a>
         </li>
         <li>
-          <a onClick={() => {
+          <a role="button" tabIndex={0} onClick={() => {
                             props.scrollTo('#location');
                             props.setNavState(false)
                             }
@@ -60,7 +59,7 @@ const MobileHeader = (props) => {
                             {props.langChosen ? props.data.LangEN.location : props.data.LangPL.location}</a>
         </li>
         <li>
-          <a onClick={() => {
+          <a role="button" tabIndex={0} onClick={() => {
                             navigate('/terms');
                             props.setNavState(false)
                             }
@@ -74,23 +73,23 @@ const MobileHeader = (props) => {
     <nav className={`nav-sub`}>
       <ul id="nav-sub-list">
         <li>
-          <a onClick={() => props.setLang(false)} className={`${props.langChosen ? "" : "lang-clicked"}`} >PL</a>
+          <a role="button" tabIndex={0} onClick={() => props.setLang(false)} className={`${props.langChosen ? "" : "lang-clicked"}`} >PL</a>
         </li>
         <li>
           |
         </li>
         <li>
-          <a onClick={() =>  props.setLang(true)} className={`${props.langChosen ? "lang-clicked" : ""}`} >EN</a>
+          <a role="button" tabIndex={0} onClick={() =>  props.setLang(true)} className={`${props.langChosen ? "lang-clicked" : ""}`} >EN</a>
         </li>
       </ul>
     </nav>
 
     <div id="social-media-icons">
-    <a id={`facebook-icon`} href="https://www.facebook.com/bullburgerkrakow/">
+    <a role="button" tabIndex={0} id={`facebook-icon`} href="https://www.facebook.com/bullburgerkrakow/">
             <FaFacebook />
           </a>
       <span></span>
-          <a id={`facebook-icon`} href="https://pl.tripadvisor.com/Restaurant_Review-g274772-d10057087-Reviews-BULL_Burger_GRILL-Krakow_Lesser_Poland_Province_Southern_Poland.html">
+          <a role="button" tabIndex={0} id={`facebook-icon`} href="https://pl.tripadvisor.com/Restaurant_Review-g274772-d10057087-Reviews-BULL_Burger_GRILL-Krakow_Lesser_Poland_Province_Southern_Poland.html">
             <FaTripadvisor />
           </a>
           

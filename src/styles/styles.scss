@@ -99,3 +99,7 @@
       .ReactModal__Overlay {
         background: none!important;
       }
+
+      *:focus {
+        outline: none;
+       }

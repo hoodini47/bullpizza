@@ -66,7 +66,7 @@ const Location = (props) => {
 
       <h2 id="secondh2">{allData.callUs}</h2>
 
-      <a href={`tel:${allData.phoneNumber}`}>{allData.phoneNumber}</a>
+      <a role="button" tabIndex={0} href={`tel:${allData.phoneNumber}`}>{allData.phoneNumber}</a>
       </div>
     </section>
   )
