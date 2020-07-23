@@ -11,11 +11,11 @@ import Zoom from 'react-reveal/Zoom';
 export const SectionWelcome = () => {
 
   const data =  useStaticQuery(graphql`
-  query MyQuery {
-    file(relativePath: {eq: "MainPhoto.jpg"}) {
-      childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
+  query MyMainPhotoQuery {
+    datoCmsMainPhoto {
+      mainPhoto {
+        fluid {
+          src
         }
       }
     }
@@ -25,7 +25,7 @@ export const SectionWelcome = () => {
 
  return (
   <section id={`welcome`} className={`first-section`}>
-    <Img fluid={data.file.childImageSharp.fluid} />
+    <Img fluid={data.datoCmsMainPhoto.mainPhoto.fluid}/>
 
     <Zoom>
       <div className={`bullpizza-logo`}>
