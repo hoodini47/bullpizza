@@ -78,14 +78,15 @@ div {
         z-index: 1;
         width: 80px;
         right: 5%;
-        top: 30%;
+        top: 25%;
+        transition: all 0.3s ease-in-out;
     
         @media screen and (min-height: 640px) {
             top: 25%;
         }
     
         @media screen and (min-height: 800px) {
-            top: 26%;
+            top: 18%;
         }
         
         @media screen and (min-width: 1000px) {
@@ -128,14 +129,14 @@ div {
     #orderText {
         text-align: center;
         position: absolute;
-        transform: translateY(-3.5em);
+        transform: translateY(-2.5em);
         font-family: "Source Sans Pro",sans-serif;
         font-weight: 600;
         line-height: 1.1;
         z-index: 1;
         font-size: 130%;
         overflow-wrap: break-word;
-        width: 90px;
+        width: 100px;
         cursor: pointer;
         text-transform: uppercase;
     
@@ -144,6 +145,7 @@ div {
             top: 15%;
             width: 120px;
             font-size: 160%;
+            transform: translateY(-3.5em);
         }
     }
     

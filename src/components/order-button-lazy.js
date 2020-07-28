@@ -37,7 +37,7 @@ const OrderButtonLazy = (props) => {
                             props.setNavState(false)
                             }
                           }
-     id={`orderText`} className={`${props.navScrolled ? "order-text-light" : "order-text-dark"}`}>
+     id={`orderText`} className={`order-text-light`}>
       {allData.order}
       </a>
       {!isSSR && (
