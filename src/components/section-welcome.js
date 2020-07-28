@@ -15,7 +15,7 @@ export const SectionWelcome = () => {
     datoCmsMainPhoto {
       mainPhoto {
         fluid {
-          src
+          ...GatsbyDatoCmsFluid
         }
       }
     }
@@ -25,7 +25,7 @@ export const SectionWelcome = () => {
 
  return (
   <section id={`welcome`} className={`first-section`}>
-    <Img fluid={data.datoCmsMainPhoto.mainPhoto.fluid}/>
+    <Img fadeIn fluid={data.datoCmsMainPhoto.mainPhoto.fluid}/>
 
     <Zoom>
       <div className={`bullpizza-logo`}>

@@ -3,6 +3,7 @@
 
     .gatsby-image-wrapper {
          height: 100vh;
+         width: 100%;
     }
 
     .bullpizza-logo {
@@ -39,6 +40,8 @@
             100% {padding-top: 0px;}
           }
 
+          
+
         span.arrow-container {
             width: 170px;
             height: 170px;
@@ -46,6 +49,11 @@
             top: 80%;
             display: flex;
             justify-content: center;
+
+            @media screen and (max-height:440px) and (orientation: landscape) {
+                top: 65%;
+             }
+ 
 
             svg {
                 width: 12vw;

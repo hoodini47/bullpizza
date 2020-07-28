@@ -7,7 +7,7 @@ export default function OrderButtonModal(){
 
  
     return (
-      <div>
+      <div id={`widget-modal-wrapper`}>
 
       <Helmet>
       <script src="https://store.goorder.pl/goorder.js"></script>
