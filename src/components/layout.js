@@ -1,4 +1,6 @@
 import React, { useState} from 'react'
+import { Helmet } from "react-helmet"
+
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import Header from "./header"
 import OrderButtonLazy from "./order-button-lazy"
@@ -43,6 +45,12 @@ const Layout = () => {
 
   return (
     <>
+
+      <Helmet>
+
+      <title>Bull Pizza</title>
+
+      </Helmet>
 
       <Header {...commonProps} {...langProps}/>
 
